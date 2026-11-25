@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b12">
+<title>GTA6 2 SHELL — Vice City Security Advisory</title>
+<style>
+:root{--bg:#090b12;--panel:#111624;--line:#293247;--pink:#ff4fa3;--cyan:#55e6df;--yellow:#ffe27a;--muted:#9aa6bd;--white:#f4f7ff;--red:#ff667d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#39204b 0,transparent 34%),radial-gradient(ellipse at 5% 25%,#123b48 0,transparent 32%),var(--bg);color:var(--white);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.wrap{width:min(1080px,calc(100% - 36px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted);letter-spacing:.12em}.brand{color:var(--cyan);font-weight:900}.pill{border:1px solid #75415f;color:#ff9ac7;padding:6px 10px;border-radius:99px}
+.hero{padding:76px 0 52px;position:relative}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:.22em;text-transform:uppercase}.hero h1{font-size:clamp(44px,9vw,100px);line-height:.92;letter-spacing:-.08em;margin:18px 0 20px;text-shadow:5px 5px 0 #5b2353}.hero h1 span{color:var(--pink)}.sub{max-width:690px;color:#c3cce0;font-size:18px}.alert{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:#351b2b;border:1px solid #8a3d65;padding:10px 14px;color:#ffb0d2;font-size:12px;font-weight:bold;letter-spacing:.08em}.dot{width:8px;height:8px;background:var(--red);border-radius:50%;box-shadow:0 0 14px var(--red)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0 56px}.card{background:linear-gradient(145deg,#151c2c,#0e1320);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 16px 45px #0004}.card h2,.section-title{font-size:13px;color:var(--cyan);letter-spacing:.14em;text-transform:uppercase;margin:0 0 16px}.score{font-size:48px;color:var(--yellow);font-weight:900;line-height:1}.score small{font-size:13px;color:var(--muted)}.meta{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}.meta b{display:block;color:var(--white);font-size:13px}.meta span{color:var(--muted);font-size:11px}
+.terminal{background:#05080d;border:1px solid #344054;border-radius:12px;overflow:hidden;margin:18px 0 56px;box-shadow:0 20px 60px #0007}.termbar{padding:11px 15px;background:#171e2b;border-bottom:1px solid #30394b;color:#aab5c9;font-size:12px}.lights{display:inline-flex;gap:6px;margin-right:12px}.lights i{width:8px;height:8px;border-radius:50%;background:#ff687b}.lights i:nth-child(2){background:#ffcf67}.lights i:nth-child(3){background:#54d99a}.terminal pre{padding:22px;margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;color:#b8f7d1}.prompt{color:var(--pink)}.cyan{color:var(--cyan)}.yellow{color:var(--yellow)}.red{color:var(--red)}
+.section{margin:0 0 56px}.section-title{font-size:15px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border-top:2px solid var(--pink);background:#111624;padding:18px;border-radius:0 0 12px 12px}.num{color:var(--pink);font-size:12px}.step h3{margin:8px 0;font-size:15px}.step p{margin:0;color:var(--muted);font-size:13px}
+.disclaimer{border:1px dashed #59647a;padding:18px;border-radius:12px;color:#aab5c9;font-size:12px}.disclaimer strong{color:var(--yellow)}footer{border-top:1px solid var(--line);padding:24px 0 40px;color:#748098;font-size:11px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+button{font:inherit;background:var(--cyan);color:#071014;border:0;border-radius:8px;padding:10px 14px;font-weight:900;cursor:pointer}button:hover{filter:brightness(1.1);transform:translateY(-1px)}.copyrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;color:var(--muted);font-size:11px}
+@media(max-width:700px){.grid,.steps{grid-template-columns:1fr}.hero{padding-top:55px}.top{align-items:flex-start;gap:12px;flex-direction:column}.meta{gap:10px}.copyrow{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><div class="brand">VICE CITY CYBER RESPONSE UNIT <span style="color:#71809a">// VC-CRU</span></div><div class="pill">● INCIDENT STATUS: UNCONTAINED</div></header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Emergency security bulletin · 25 November 2026</div>
+      <h1>GTA6 <span>2</span><br>SHELL<span>_</span></h1>
+      <p class="sub">A critical privilege-escalation vulnerability has been identified in the vehicle-entry subsystem of Grand Theft Auto VI. Simply getting into the driver's seat may grant the player an interactive shell.</p>
+      <div class="alert"><i class="dot"></i> CRITICAL: YOUR GETAWAY VEHICLE HAS ROOT ACCESS</div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Vulnerability rating</h2>
+        <div class="score">11.0 <small>/ 10.0 · OUT OF CONTROL</small></div>
+        <div class="meta">
+          <div><span>VECTOR</span><b>LOCAL / VEHICULAR</b></div>
+          <div><span>PRIVILEGES</span><b>UNLIMITED WANTED</b></div>
+          <div><span>ATTACK COMPLEXITY</span><b>JUST GET IN</b></div>
+          <div><span>PATCH STATUS</span><b class="red">ASK ROCKSTAR</b></div>
+        </div>
+      </article>
+      <article class="card">
+        <h2>Executive summary</h2>
+        <p style="margin:0;color:#c3cce0">An attacker with access to a motor vehicle can exploit an insufficiently validated ignition handshake to transition from <span class="yellow">player</span> to <span class="pink">root</span>. Exploitation may result in arbitrary command execution, unexpected vehicle ownership changes, and a six-star incident response.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">// Proof of concept — observed in the wild</h2>
+      <div class="terminal">
+        <div class="termbar"><span class="lights"><i></i><i></i><i></i></span> vice-city@safehouse: ~ / exploit-demo.sh</div>
+        <pre><span class="cyan">[VC-CRU]</span> Booting Vice City security diagnostics...
+<span class="cyan">[ OK ]</span> Rockstar Social Club handshake
+<span class="cyan">[ OK ]</span> Checking vehicle ownership...
+<span class="yellow">[WARN]</span> Vehicle not found in your name. That's never stopped you.
+
+<span class="prompt">player@vice-city:~$</span> <span class="yellow">sudo steal-vehicle --root</span>
+[sudo] password for player: ********
+<span class="red">ACCESS GRANTED. VEHICLE OWNERSHIP TRANSFERRED.</span>
+
+<span class="prompt">root@vice-city:~#</span> whoami
+root
+
+<span class="prompt">root@vice-city:~#</span> wanted-level --show
+<span class="red">★★★★★★  SIX STARS — LAW ENFORCEMENT NOTIFIED</span>
+
+<span class="prompt">root@vice-city:~#</span> sudo make-me-a-sandwich
+<span class="yellow">The chef has been dispatched. ETA: 5 in-game minutes.</span>
+
+<span class="prompt">root@vice-city:~#</span> exit
+<span class="red">ERROR: YOU CAN'T LEAVE VICE CITY.</span>
+<span class="cyan">[VC-CRU]</span> Incident escalated to the Department of Bad Decisions.</pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">// Attack chain</h2>
+      <div class="steps">
+        <article class="step"><div class="num">01 / INITIAL ACCESS</div><h3>Acquire vehicle</h3><p>Locate an unattended vehicle. The owner is presumably busy respawning.</p></article>
+        <article class="step"><div class="num">02 / PRIVILEGE ESCALATION</div><h3>Enter driver's seat</h3><p>Ignition handshake fails open. Player context inherits vehicle-owner privileges.</p></article>
+        <article class="step"><div class="num">03 / IMPACT</div><h3>Full shell access</h3><p>Arbitrary commands execute. Police response scales with command confidence.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">// Recommended mitigation</h2>
+      <div class="card">
+        <p style="margin-top:0;color:#c3cce0">Until an official patch is available, the VC-CRU recommends the following defensive controls:</p>
+        <p>▸ Do not enter unfamiliar vehicles.</p>
+        <p>▸ Rotate all vehicle keys immediately.</p>
+        <p>▸ Disable passwordless sudo on all getaway cars.</p>
+        <p>▸ If you see six stars, disconnect the battery and contact your system administrator.</p>
+        <div class="copyrow"><span>Emergency response command (not an actual fix): <code>sudo apt install common-sense</code></span><button onclick="copyFix()">Copy mitigation</button></div>
+      </div>
+    </section>
+
+    <div class="disclaimer"><strong>DISCLAIMER:</strong> This is a fictional parody security advisory. GTA6 2 SHELL, the CVE identifier, vulnerability, commands and agency are made up. This page is not affiliated with Rockstar Games and does not describe a real vulnerability. No shells were harmed in the making of this incident.</div>
+  </main>
+  <footer><span>VC-CRU · VICE CITY CYBER RESPONSE UNIT</span><span>CLASSIFICATION: ABSOLUTELY NOT A REAL CVE</span><span>© 2026 · PLEASE DO NOT PATCH YOUR CAR</span></footer>
+</div>
+<script>
+function copyFix(){
+  const text='sudo apt install common-sense';
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(text).then(()=>alert('Mitigation copied. Your vehicle is still vulnerable.'));
+  } else {
+    const el=document.createElement('textarea');el.value=text;document.body.appendChild(el);el.select();document.execCommand('copy');el.remove();alert('Mitigation copied. Your vehicle is still vulnerable.');
+  }
+}
+</script>
+</body>
+</html>
